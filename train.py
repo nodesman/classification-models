@@ -7,6 +7,7 @@ import csv
 import md5
 import os
 
+os.environ['JAVA_HOME']='/usr/lib/jvm/default-java/'
 if (len(sys.argv) < 2):
     print "train.py train.csv modelName "
     sys.exit()
@@ -16,6 +17,11 @@ reader = csv.reader(open(args[1],'rb'), delimiter=',')
 
 model = sys.argv[2];
 
+
+if (len(args) == 4):
+    modelPathOnHDFS=args[3]
+else:
+    modelPathOnHDFS='model_output'
 
 #find name of directory which is not normal
 path = "./"+model
@@ -86,23 +92,50 @@ normalWriter = csv.writer(open('./tmp/'+hash+'1.csv','wb'))
 
 
 for row in toPutInActual:
+    print "URL "+row+" will be categorized under "+category
     normalWriter.writerow([row])
 
-normalWriter = csv.writer(open('./tmp/'+hash+'2.csv','wb'))
+fp = open('./tmp/'+hash+'2.csv','wb')
+normalWriter = csv.writer(fp)
 
 for row in toPutInNormal:
+    print "URL "+row+" will be categorized under normal"
     normalWriter.writerow([row])
 
-#feed each csv to the retrainer application
-os.system('java -jar trainer.jar tmp/'+hash+'1.csv '+model+'/'+category)
-os.system('java -jar trainer.jar tmp/'+hash+'2.csv '+model+'/normal')
+fp.close()
 
+#feed each csv to the retrainer application
+print "Starting crawler for category "+category
+command = 'java -jar trainer.jar tmp/'+hash+'1.csv '+model+'/'+category
+print command
+os.system(command)
+print "Starting crawler for category normal"
+command = 'java -jar trainer.jar tmp/'+hash+'2.csv '+model+'/normal'
+print command
+os.system(command)
 
 #prepare 20 newsgroups
-os.system('export JAVA_HOME=/usr/lib/jvm/default-java/')
-os.system('mahout prepare20newsgroups -p '+model+' -o tmp/'+hash+' -a org.apache.mahout.vectorizer.DefaultAnalyzer -c UTF-8')
-os.system('hadoop dfs -mkdir model_staging')
-os.system('hadoop dfs -put tmp/'+hash+' model_staging');
-os.system('hadoop dfs -mkdir model_output');
-os.system('hadoop dfs -rmr model_output/'+model);
-os.system('mahout trainclassifier -i model_staging/'+hash+' -o model_output/'+model+' -type bayes -ng 1 -source hdfs')
+print "Preparing 20 newgroups for "+model
+command = 'mahout prepare20newsgroups -p '+model+' -o tmp/'+hash+' -a org.apache.mahout.vectorizer.DefaultAnalyzer -c UTF-8'
+print command
+os.system(command)
+print "Creating hdfs staging directory"
+command = 'hadoop dfs -mkdir model_staging'
+print command
+os.system(command)
+print "Copying to staging directory"
+command = 'hadoop dfs -put tmp/'+hash+' model_staging'
+print command
+os.system(command);
+print "Making model output directory "+modelPathOnHDFS
+command = 'hadoop dfs -mkdir '+modelPathOnHDFS
+print command
+os.system(command);
+existing = modelPathOnHDFS+'/'+model
+print "Removing existing model directory "+existing
+command = 'hadoop dfs -rmr '+existing
+print command
+os.system(command);
+print 'Training....'
+command = 'mahout trainclassifier -i model_staging/'+hash+' -o '+modelPathOnHDFS+'/'+model+' -type bayes -ng 1 -source hdfs'
+os.system(command)
