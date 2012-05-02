@@ -1,0 +1,78 @@
+Easy corner
+
+    ESSAY (1)
+    Mehndi Design (3)
+    Nested loop (4)
+    RECIPES (3)
+    Sorting (1)
+    Vocabulary (7)
+
+Saturday, February 11, 2012
+Pattern 5
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int n, c, k, space;
+
+    printf("Enter number of rows\n");
+    scanf("%d",&n);
+
+    space = n;
+
+    for ( k = 1 ; k <= n ; k++ )
+    {
+        for ( c = 1 ; c < space ; c++ )
+            printf(" ");
+
+        space--;
+
+        for( c = 1 ; c <= k ; c++ )
+            printf("*");
+
+        printf("\n");
+    }
+
+ getch();
+      return 0;
+}
+Labels: Nested loop
+at 3:30 AM
+Email ThisBlogThis!Share to TwitterShare to Facebook
+Older Posts Home
+Subscribe to: Posts (Atom)
+About Me
+
+only4student
+
+View my complete profile
+Followers
+counter
+, , , ,
+Blog Archive
+
+    ▼  2012 (2)
+        ▼  Feb (2)
+            ▼  Feb 11 (2)
+                Pattern 5
+                pattern 3
+
+    ►  2011 (17)
+
+Search This Blog
+	
+Labels
+
+    ESSAY (1)
+    RECIPES (3)
+    Vocabulary (7)
+
+Add
+Share it
+	
+Daily Calendar
+	
+Phone number converter
+Simple template. Template images by diane555. Powered by Blogger.
+

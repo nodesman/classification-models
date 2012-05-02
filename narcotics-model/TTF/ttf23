@@ -1,0 +1,308 @@
+Zemalf's Haven
+
+Gaming guides, tutorials and let's play videos
+
+    Home
+    About
+    Contact
+    Support
+    Let's Play
+    FAQ
+    YouTube
+    Twitter
+    Facebook
+
+2011-12-11
+Let's Role-Play Skyrim
+
+Slow-paced role-play with a Breton mage (pure mage). Difficulty: Master. Permanent death (on death, this let's play is over).
+
+Can a Breton goods peddler find his inner hero, his destiny, or will he die trying?
+
+To watch this on YouTube (HD 1080p),
+click here: Let's Role-Play Skyrim (The Elder Scrolls V).
+Yngvarr
+
+Yngvarr is an average chap. Not a hero by any means, unless picking flowers or buying and selling goods makes a man heroic. He is a Breton goods peddler and a recreational alchemist who, before arriving in Skyrim, isn't aware of all the powers hidden within him.
+
+His father was a Nord caravan guard and mother is a Breton healer. Yngvarr was born in Elinhir, a town in Hammerfell, but he never really had a place he or his family called home, as he became a travelling merchant like his parents were.
+
+Yngvarr came to Skyrim looking for an adventure, for a new beginning for his life, but he barely made it past the mountains when he ran to an ambush by the Imperial forces and was knocked out before he had the chance to talk.
+
+Let's Role-Play Skyrim Part 1 - Introduction and Character Creation
+About this let's play
+
+This is more "serious" role-play than most other let's plays. I also play with a slow-paced style that is not for everyone.
+
+Yngvarr needs to sleep, drink and eat, and he can't be running all the time. Unless there's specific reason to run and sprint, Yngvarr will walk, like a normal person would. Yngvarr can't reload the last save if things don't go his way, so if he dies, he dies.
+
+I'm recording and uploading all videos in Full HD 1080p (1920x1080).
+Mods and Tweaks
+
+Since the mod list is mile long, I have a Google Doc up where I list all the mods (and my Skyrim.ini and SkyrimPrefs.ini): http://goo.gl/TYPWx.
+
+It's not a guide, just a list of mods I'm using. I won't answer ANY QUESTIONS about how to install mods, how to fix if Skyrim crashes, etc.
+
+I'm using several graphical enhancements mods and HD textures that enhance the looks of the game while staying true to Bethesda's designs and Elder Scrolls lore and keeping the game playable as I'm recording in 1080p.
+
+At first, I used STEP - Skyrim Total Enhancement Project as a guideline (compilation of many, many mods, mostly HD Textures, but also other graphical tweaks). Later, I started removing mods and adding other mods too.
+
+As of now (around part 97), I'm using about 135 different mods and/or texture replacers. I have ~50 esm-/esp-files active (I haven't done Bashed Patch) - some mods add multiple files, so there's roughly 40 real "mods".
+
+I'm using Nexus Mod Manager to install and update all the mods, you should too. (or use Wrye Bash if you want hardcore)
+
+Another NOTE: Overmodding your Skyrim will make it more and more likely to crash. Know your computers and graphics cards limits before tweaking the graphics settings and adding HD textures and such. In case you're interested, my rig is i7-2600K (Overclocked @4.5Ghz), SSD drive and Nvidia GTX 590 (3GB) as listed in my FAQ.
+What Are People Saying? (Comments from the videos)
+
+Leave a comment in any video of this let's play and tell me what you think of it, and I might add your comment here :)
+
+    "Its the best looking lets play iv'e seen to date. Have only just﻿ joined your channel and already loving yngvarr." -ANGRYLADmedia
+
+    "this is how Skyrim is meant to be played!﻿ Great series my friend!" -ModernNorseman
+
+    "How can you take this silly game﻿ so seriously!" - one of my favorite comments :)
+
+    "Loving the series﻿ so far" -TheHeadlessMonkey98
+
+    "i love this roleplaying instead of every 1 is full armored and killing dragons ur playing it for real i LOVE IT﻿" -HoroSc0pe
+
+Playlist
+
+Show (subscriber for updates): Skyrim Roleplay
+
+Playlist (all parts): Let's Role-Play Skyrim (The Elder Scrolls V).
+
+Posted by Antti Kokkonen Date 12/11/2011 0 Comments and 0 Reactions
+2011-11-25
+Skyrim Archery Tweak: More Like Real Archery Now
+
+Learn how to make the archery in Skyrim feel much more like real archery and medieval combat.
+
+This post and the video below shows a Skyrim archery tweak making bow and arrows work much more realistically and intuitively. Tweak makes arrows fly thru the crosshair and then fall (as in Oblivion and most other games), and not over the crosshair like it does by default, and make the archery feel a lot more like real archery.
+
+As far as I know, this tweak is safe (doesn't break save games) and you can "uninstall" by removing the lines you add, and arrows behave as by default again.
+
+By default, bow is automatically tilted up and arrows fly over the crosshair, making the bow to work a bit like gun (you hit where you aim). This is usually fine, especially in close distances, but if you want to "snipe" from a distance, it comes really hard to figure out where to aim.
+
+Plus, I think it's just better that the archery works more the way it works in other games and in real life - Thus, I like really liked how this tweak changed how archery works.
+Skyrim.ini Edit
+
+1) Find Skyrim.ini (not SkyrimPrefs.ini), which is located in 'My Documents/My Games/Skyrim' after running Skyrim once.
+
+2) Backup Skyrim.ini before editing (take a copy of it).
+
+3) Add to Skyrim.ini (or edit the lines are already there) [1]:
+[Combat]
+fMagnetismStrafeHeadingMult=0.0
+fMagnetismLookingMult=0.0
+f1PArrowTiltUpAngle=0.7
+f3PArrowTiltUpAngle=0.7
+
+4) And if you want the arrows to fly really far (not in use on the video), add this to Skyrim.ini as well [2]:
+[Actor]
+fVisibleNavmeshMoveDist=12288.0000
+
+Because of gravity physics, arrows fall as they fly, this tweak doesn't change that.
+
+As a result, with the tweak arrows behave more intuitively and you can compensate longer distances by aiming higher without guessing how high the arrow will fire - and on shorter distances, hit exactly where you aim.
+
+Here's a video I made showing how the archery works by default (0:00) and how it changes and works after the tweak (3:35 onwards):
+
+Skyrim Archery Tweak: How to Make Arrows Behave More Intuitively
+
+
+
+Watch the video in YouTube (HD): Skyrim Archery Tweak
+References
+
+I couldn't find who came up with the tweak first to give proper credit, but I found it from Bethesda Forums when the tweak was posted by spookyfx.com:
+
+    [1] Tweaking arrows to behave more like Oblivion? (Bethesda Forum)
+    [2] Archery / Magic Range Limit Fix (Bethesda Forum)
+
+Posted by Antti Kokkonen Date 11/25/2011 16 Comments and 0 Reactions
+2011-09-06
+Let's Play Deus Ex: Human Revolution
+
+My Let's play Deus Ex Human Revolution begins. I take the role of Adam Jensen in this amazing sci-fi RPG and I welcome you to the journey to enjoy the game and the story with me.
+
+YouTube
+
+
+
+Watch in HD (YouTube Playlist): Let's Play Deus Ex: Human Revolution
+
+All Episodes (blip.tv)
+
+
+The above is the full playlist of the Let's Play Deus Ex Human Revolution. I haven't found a way to link to a playlist, so this is what we got.
+
+p.s. You don't have to watch all episodes from the first and onwards, just press Play on the player, and you'll see get an option to choose an episode or a list of episodes where to choose from.
+You can watch all episodes also at http://blip.tv/zemalfplays or via iTunes (into your computer, or any other machine you can watch video podcasts with).
+
+The game can be bought via Steam (PC) and or via Amazon for example:
+
+Posted by Antti Kokkonen Date 9/06/2011 0 Comments and 0 Reactions
+Tags: Deus Ex, letsplay, videogame, Videos, walkthrough
+2011-09-04
+How to Beat Barrett in 60 Seconds or Less - Deus Ex Human Revolution
+
+To defeat Barrett:
+
+    As soon as the battle begins, throw a EMP granade on Barrett (if you have one)
+    Strafe/turn right, grab one of the gas canisters on the right
+    Throw the gas canister on Barrett
+    Run to the left or straight down the right side, grab the explosive barrel, throw it on Barrett
+    grab next gas canister or one of the fire extinguishers, throw it at him
+    run to another explosive barrel, grab it, aim, throw it on Barrett
+    repeat 5-6
+    (if you run out of things to throw, Barrett should be damaged enough for you to finish him with any gun)
+
+See the video below for visuals...
+
+Video Walkthrough of the Barrett Fight
+
+Here's quick video showing how to defeat Lawrence Barrett, elite member of a secret mercenary hit squad, and get The Bull achievement.
+
+I used over 45 minutes on the first boss battle of Deus Ex Human Revolution, trying to win the fight with guns, which I hadn't used at all before that as I was playing "stealthily", avoiding enemies by sneaking past them, or taking them down without killing them...
+
+Anyway, after almost an hour I had to give up and I looked for help on how to win Barrett. I found an easy way, which got the job done (even that it was a bit "boring" way to win the fight), but at least I was able to continue this awesome game.
+
+And here's a video I made to show you how to do the same...
+
+Deus Ex Human Revolution Barrett Boss Battle Guide
+
+
+
+Watch on YouTube (HD 720p):
+How to Beat Barrett in 60 Seconds or Less - Deus Ex Human Revolution - Boss Battle I
+
+Posted by Antti Kokkonen Date 9/04/2011 5 Comments and 0 Reactions
+Tags: Deus Ex, Guide, Hints and Tips, Tutorial, Videos
+Older Posts Home
+Subscribe to: Posts (Atom)
+Stay updated!
+RSS Subscribe in a reader
+
+Editor's Picks
+
+Let's Plays (Gameplay / Commentary)
+
+    Skyrim (Role-play, Mage)
+    Deus Ex Human Revolution
+    Mount & Blade: Warband
+    The Witcher [BLIND]
+
+Most Popular Posts
+
+    Mount & Blade: Warband Trading Guide
+    How To Create a Perfect Character in Fallout 3
+    The Witcher 2 Magic Signs & Traps
+
+World of Warcraft
+
+    WoW Achievements: Accomplished Angler
+    How To Powerlevel Mining with Smelting
+    Two Healing Addons to Rule Them All
+    Three Healing Addons to Rule Even More
+
+EVE Online
+
+    All Things Eve - The Eve Online Guide
+    Eve Kick-Start: Creating a New Eve Character
+    Eve Kick-Start: Skill Training for Newbies
+
+Bookmark and Share
+Bookmark and Share
+Followers
+Blog Archive
+
+    ▼  2011 (19)
+        ▼  December (1)
+            Let's Role-Play Skyrim
+        ►  November (1)
+        ►  September (2)
+        ►  August (2)
+        ►  July (1)
+        ►  June (3)
+        ►  May (1)
+        ►  April (5)
+        ►  February (3)
+
+    ►  2010 (6)
+
+    ►  2009 (13)
+
+    ►  2008 (45)
+
+    ►  2006 (3)
+
+    ►  2005 (12)
+
+Recent Posts
+WoW Guild
+
+    Cult of the Old Ones
+
+Guild Alliance
+Guild Alliance
+WoW Resources
+
+    Auctioneer Addon
+    Kaliban's Class Loot Lists
+    Thottbot
+    Wowhead
+    WoWWiki
+    Zygor Guides
+
+WoW Blogs
+
+    WOW Insider
+    World of Matticus
+    Dwarf Priest
+
+EVE Resources
+
+    Play Eve Online
+    EVE Game Time Codes
+    EVEMon
+    Eve Fitting Tool
+
+Other Gaming Links
+
+    LiveGamers - Finnish Xbox community
+    Game Time Codes
+
+	
+Zemalf's YouTube Channel
+Gaming Zemalf
+Let's Play Videos
+
+TheZemalf on YouTube
+
+World of Warcraft (not-so-active)
+
+Zemalf (Armory Link)
+Class: Priest (Holy)
+Realm: EU-Aggramar (Normal)
+
+Eve Online (not-so-active)
+
+Araihs Revlis
+	
+Stay connected with Antti (Zemalf)
+
+    Twitter
+    YouTube
+    Google+
+    Facebook
+
+Zemalf's Links
+
+    Zemalf.com
+
+Raptr
+Raptr Forum Signature
+Blog authored by Zemalf. Simple template. Powered by Blogger.
+###
+

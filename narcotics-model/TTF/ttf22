@@ -1,0 +1,227 @@
+Zen Cart Tutorials
+
+    Home
+    About
+    Zen Cart Tips
+    Zen Cart Tutorials
+    Zen Cart Templates
+
+Sunday, January 22, 2012
+How to Add Social Bookmarking to Zen Cart
+Posted by The Wizz | 4:02 AM | 0 comments »
+Labels: customizing zen cart, facebook, google +1, twitter, zen cart social media, zen cart tutorials
+
+Best 10 Social Bookmarking Solutions for Zen Cart. Handpicked Zen Cart Tutorials to help you add a Facebook Like Button, Facebook Fan Page or other social media buttons and boxes to Zen Cart.
+
+It is easy to add social bookmarking share buttons to your Zen Cart store product pages for Facebook, Twitter, Google Plus One. Perhaps you already have a like button and want a Facebook Fan Page in a sidebox of your Zen Cart shop. No problem. The modifications to Zen Cart outlined in these Zen Cart tutorials only take a few minutes to implement but will provide invaluable exposure for your Zen Cart e-commerce store. And best of all they are all provided free.
+
+Many Zen Cart webmasters and bloggers have written articles about how to get Facebook like buttons onto a Zen Cart store. Others have instructed in ways of adding Facebook Fan Pages to Zen Cart. Some have also discussed ways to add social media or social bookmarking buttons including Facebook, Twitter, Stumble Upon and Google +1 to Zen Cart.
+
+Rather than deliver up the same instructions as everybody else I thought it would be more helpful to compile a list of Zen Cart tutorials that discuss the different ways to place social bookmarking buttons on a Zen Cart store. Remember these links all point to free Zen Cart tutorials that I have personally handpicked because of their quality and clarity.
+
+Not Technical and Would Rather Pay Someone?
+Try Freelancer.com for all your Zen Cart customizationsHowever if you are not technically minded and don't want to manually change Zen Cart files you can always pay a small fee and have some technical person at Freelancer.com implement a Facebook like button or fan page or add social media options on your Zen Cart store. Or for that matter upgrade your Zen Cart store in anyway you would like it customized. Check out Freelancer.com here
+
+How to Add a Facebook Like Button to Zen Cart
+
+    Picaflor Azul provides details of the simpliest method to get a Facebook like button installed on a Zen Cart store. If you are not technically minded and just want the button this Zen Cart tutorial may work best for you.
+    How to Add a Facebook Like Button to Your Product Pages
+
+    Numinix walks you through the steps to add Facebook like button code to various Zen Cart files to display a Facebook like button on every product page in a Zen Cart store. Instructions for implementing both XFBML method and the iframe method are given.
+    How to add a Facebook like button to your Zen Cart product pages
+
+    Kerrin Hardy provides a comprehensive and thorough tutorial on how to add a Facebook like button to Zen Cart to promote a Zen Cart store around the world. Included in the Zen Cart tutorial are details about how to change the meta tags to capture product descriptions and details.
+    Add the Facebook Like Button to your Zen Cart store
+
+    If you want to understand how Facebook and Zen Cart work together also see how a Facebook Like button works with a Zen Cart store
+
+    Pro-webs.net has come up with a very nice tweak to ensure that only the product image is shared when a visitor clicks on the Facebook like button in Zen Cart by using Facebook Open Graph Protocol. This tweak assumes you already have a Facebook like button added to your Zen Cart store.
+    Product Images for Facebook Like Buttons in Zen Cart
+
+
+
+How to Put a Facebook Like Box on Zen Cart
+
+    Picaflor Azul takes you through the steps to add a Facebook Like Box to Zen Cart with lots of graphics and easy to follow instructions.
+    How to Add a Facebook Like Box to Zen Cart
+
+    Kerrin Hardy provides complete step-by-step instructions on how to put a Facebook fan page box on a Zen Cart store. This walk-through has easy to follow steps that will help you add a Facebook Fan Page sidebox on your Zen Cart store in no time.
+    Add a Facebook Page Fan Box to your Zen Cart store
+
+    Also check out how to make a Facebook Like Box in Zen Cart visible to everyone
+
+
+
+How to Add Social Bookmarking Buttons to Zen Cart
+
+    Pro-webs.net describes a neat Javascript solution for adding Google Plus 1 Google Buzz, Twitter, Facebook and Stumble Upon buttons to a Zen Cart store in one short piece of code.
+    Google Plus 1 For Your Zen Cart
+
+    Navspan takes a different approach to putting social sharing buttons on a Zen Cart store by suggesting the addthis.com all in one solution. Beginners will appreciate this thorough discussion on how to add Twitter, Google +1 and Facebook buttons to Zen Cart
+    Adding Facebook “Like”, Twitter and Google +1 to Zen Cart™ (How To)
+
+    That Software Guy offers instructions on how to add submission buttons for four popular social bookmarking buttons including Furl and del.icio.us. Also shows how to add a AddThis.com all in one social bookmarking button.
+    Social Bookmarking for Zen Cart
+
+    Embryo Design describes a simple way to add Facebook, Twitter and Google +1 buttons to Zen Cart but without displaying count - ie the number of likes or tweets etc. I have included this Zen Cart tutorial for anyone interested in this method but be advised that the image used by Facebook may not be the product image.
+    How to place social media links in Zen Cart
+
+
+
+Related Articles
+Zen Cart Tutorial List
+
+
+
+Bookmark and Share
+Posted by The Wizz
+Labels: customizing zen cart, facebook, google +1, twitter, zen cart social media, zen cart tutorials
+
+
+
+0 comments »
+Tuesday, May 17, 2011
+How to Customize Emails Sent Directly From Zen Cart
+Posted by The Wizz | 6:55 PM | 0 comments »
+Labels: customizing zen cart, zen cart emails, zen cart help, zen cart logo, zen cart tutorials
+
+In today's Zen Cart tutorial I discuss how to customize the emails sent directly from Zen Cart so that they reflect your store details. This will ensure that the email contains your store logo, copyright notice and any changes to the disclaimer in the footer section of the email you may wish to make.
+
+    Replace the Zen Cart logo by modifying the file: /admin/images/logo.gif as outlined in my previous Zen Cart tutorial - How to Replace the Zen Cart Logo in Admin.
+
+    Download the file:
+
+        admin/includes/languages/english/email_extras.php
+
+
+    Open this file in a text editor such as notepad. Do not use a word processing program such as Microsoft Word or unexpected results may result. Make the following changes to the file:
+
+    To make changes to the email footer find line 40
+
+        define('EMAIL_FOOTER_COPYRIGHT','Copyright (c) ' . date('Y') . ' <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a>. Powered by <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a>');
+
+
+    Change the Zen Cart URL address to that of your store (denoted in red)
+
+    Change the words "Zen Cart" to the name of your store eg Sally's Bookshop (denoted in green)
+
+    To remove "powered by Zen Cart" delete the text (denoted in magenta) taking care to leave the single quote mark at the end of the line intact.
+
+    If you wish to change the wording of email disclaimer you can do so by editing the text between the single quote marks on line 38
+
+    If you wish to change the email spam disclaimer change the text in line 39 between the single quote marks.
+
+    Save your changes to the file email_extras.php and upload to your server.
+
+
+
+Related Articles
+
+Zen Cart Tutorials List
+How to Replace the Zen Cart Logo in Zen Cart Admin
+
+
+
+Bookmark and Share
+Posted by The Wizz
+Labels: customizing zen cart, zen cart emails, zen cart help, zen cart logo, zen cart tutorials
+
+
+
+0 comments »
+Monday, April 4, 2011
+How to Remove the Shipping Estimator Button in Zen Cart
+Posted by The Wizz | 7:11 AM | 0 comments »
+Labels: customizing zen cart, zen cart buttons, zen cart shipping estimator, zen cart shopping cart, zen cart tutorials
+
+In today's Zen Cart tutorial I discuss how to remove, delete or turn off the Shipping Estimator button in a Zen Cart shopping cart. The Shipping Estimator in Zen Cart is a very handy feature which allows customers of your Zen Cart store to see what the cost of shipping the items in their shopping cart is before they checkout.
+
+Sometimes however you may wish to turn off the shipping estimator, perhaps because you fear your customers will get put off by the price of shipping. Or perhaps you wish to turn it off to improve the look of your shopping cart. Whatever the reason turning off the Shopping Estimator button in Zen Cart is a quick and easy process. Follow these simple directions to stop the Shipping Estimator button displaying in your Zen Cart store.
+
+Turn off Shipping Estimator Button in Zen Cart
+How to Remove, Delete or Turn Off the Shipping Estimator Button in Zen Cart
+
+    Login to Zen Cart admin
+
+    Go to Configuration > Shipping/Packaging
+
+    By default the Shipping Estimator is set to 1 (the on position). Switch off by setting to 0
+
+    How to Turn Off Shipping Estimator Button in Zen Cart Admin
+
+
+In today's Zen Cart tutorial you have learned how easy it is to turn off the shipping estimator button in a Zen Cart store. Enjoy! As always any questions please ask.
+
+Related Articles
+Zen Cart Tutorials List
+
+
+
+Bookmark and Share
+Posted by The Wizz
+Labels: customizing zen cart, zen cart buttons, zen cart shipping estimator, zen cart shopping cart, zen cart tutorials
+
+
+
+0 comments »
+Older Posts Home
+Subscribe to: Posts (Atom)
+Entries (RSS) Comments (RSS) Add to Technorati Favorites
+Get Chitika Premium LinkShare_125x125ButtonV2
+Recent Posts
+
+    How to Add Social Bookmarking to Zen Cart
+    How to Customize Emails Sent Directly From Zen Cart
+    How to Remove the Shipping Estimator Button in Zen Cart
+    How to Display Your Own Logo in Zen Cart Admin
+    How to Change More Information Pages and Sidebox in Zen Cart
+
+Labels
+
+    change zen cart settings (3)
+    customizing zen cart (14)
+    upgrading zen cart (1)
+    zen cart buttons (1)
+    zen cart contributions (1)
+    zen cart emails (2)
+    zen cart logo (2)
+    zen cart meta tags (1)
+    zen cart more information pages (1)
+    zen cart pages (1)
+    zen cart releases (1)
+    zen cart seo (1)
+    zen cart shopping cart (1)
+    zen cart sideboxes (1)
+    zen cart social media (1)
+    zen cart templates (1)
+    zen cart tips (2)
+    zen cart tutorials (13)
+    zen cart welcome guest message (1)
+
+Useful Links
+
+    Chitika
+    Zen Cart Addons
+
+Recent Readers
+Recent Viewers
+				
+Powered By BlogCatalog
+Become a Facebook Fan
+Zen Cart Tutorials
+
+Promote Your Page Too
+Followers
+Archives
+
+    2012 (1)
+    2011 (12)
+    2010 (3)
+    2009 (1)
+
+Live Traffic Feed
+
+Zen Cart Tutorials - Original design by Blogging Secret | Free Blogger Templates | Ads Theme Blogger Template
+
+Posts RSS | Jump to TOP
+
